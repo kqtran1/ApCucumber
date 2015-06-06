@@ -1,0 +1,13 @@
+package com.rastakiki.apcucumber;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        format = {"pretty", "html:target/cucumber"},
+        glue = "com.rastakiki.apcucumber.steps"
+)
+public class APCucumberTest {
+}
